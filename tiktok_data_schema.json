@@ -1,0 +1,807 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "Activity": {
+      "type": "object",
+      "properties": {
+        "Favorite Effects": {
+          "type": "object",
+          "properties": {
+            "FavoriteEffectsList": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "FavoriteEffectsList"
+          ]
+        },
+        "Favorite Hashtags": {
+          "type": "object",
+          "properties": {
+            "FavoriteHashtagList": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "FavoriteHashtagList"
+          ]
+        },
+        "Favorite Sounds": {
+          "type": "object",
+          "properties": {
+            "FavoriteSoundList": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "FavoriteSoundList"
+          ]
+        },
+        "Favorite Videos": {
+          "type": "object",
+          "properties": {
+            "FavoriteVideoList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string"
+                  },
+                  "Link": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Link"
+                ]
+              }
+            }
+          },
+          "required": [
+            "FavoriteVideoList"
+          ]
+        },
+        "Follower List": {
+          "type": "object",
+          "properties": {
+            "FansList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string"
+                  },
+                  "UserName": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "Date",
+                  "UserName"
+                ]
+              }
+            }
+          },
+          "required": [
+            "FansList"
+          ]
+        },
+        "Following List": {
+          "type": "object",
+          "properties": {
+            "Following": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "Following"
+          ]
+        },
+        "Hashtag": {
+          "type": "object"
+        },
+        "Like List": {
+          "type": "object",
+          "properties": {
+            "ItemFavoriteList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string"
+                  },
+                  "Link": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Link"
+                ]
+              }
+            }
+          },
+          "required": [
+            "ItemFavoriteList"
+          ]
+        },
+        "Login History": {
+          "type": "object",
+          "properties": {
+            "LoginHistoryList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string"
+                  },
+                  "IP": {
+                    "type": "string"
+                  },
+                  "DeviceModel": {
+                    "type": "string"
+                  },
+                  "DeviceSystem": {
+                    "type": "string"
+                  },
+                  "NetworkType": {
+                    "type": "string"
+                  },
+                  "Carrier": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "Carrier",
+                  "Date",
+                  "DeviceModel",
+                  "DeviceSystem",
+                  "IP",
+                  "NetworkType"
+                ]
+              }
+            }
+          },
+          "required": [
+            "LoginHistoryList"
+          ]
+        },
+        "Purchase History": {
+          "type": "object"
+        },
+        "Search History": {
+          "type": "object"
+        },
+        "Share History": {
+          "type": "object",
+          "properties": {
+            "ShareHistoryList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string"
+                  },
+                  "SharedContent": {
+                    "type": "string"
+                  },
+                  "Link": {
+                    "type": "string"
+                  },
+                  "Method": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Link",
+                  "Method",
+                  "SharedContent"
+                ]
+              }
+            }
+          },
+          "required": [
+            "ShareHistoryList"
+          ]
+        },
+        "Status": {
+          "type": "object",
+          "properties": {
+            "Status List": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Resolution": {
+                    "type": "string"
+                  },
+                  "App Version": {
+                    "type": "string"
+                  },
+                  "IDFA": {
+                    "type": "string"
+                  },
+                  "GAID": {
+                    "type": "string"
+                  },
+                  "Android ID": {
+                    "type": "string"
+                  },
+                  "IDFV": {
+                    "type": "string"
+                  },
+                  "Web ID": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "Android ID",
+                  "App Version",
+                  "GAID",
+                  "IDFA",
+                  "IDFV",
+                  "Resolution",
+                  "Web ID"
+                ]
+              }
+            }
+          },
+          "required": [
+            "Status List"
+          ]
+        },
+        "Video Browsing History": {
+          "type": "object",
+          "properties": {
+            "VideoList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string"
+                  },
+                  "Link": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Link"
+                ]
+              }
+            }
+          },
+          "required": [
+            "VideoList"
+          ]
+        }
+      },
+      "required": [
+        "Favorite Effects",
+        "Favorite Hashtags",
+        "Favorite Sounds",
+        "Favorite Videos",
+        "Follower List",
+        "Following List",
+        "Hashtag",
+        "Like List",
+        "Login History",
+        "Purchase History",
+        "Search History",
+        "Share History",
+        "Status",
+        "Video Browsing History"
+      ]
+    },
+    "Ads and data": {
+      "type": "object",
+      "properties": {
+        "Ad Interests": {
+          "type": "object",
+          "properties": {
+            "AdInterestCategories": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "AdInterestCategories"
+          ]
+        },
+        "Ads Based On Data Received From Partners": {
+          "type": "object",
+          "properties": {
+            "DataPartnerList": {
+              "type": "string"
+            },
+            "AdvertiserList": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "AdvertiserList",
+            "DataPartnerList"
+          ]
+        },
+        "Usage Data From Third-Party Apps And Websites": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "Ad Interests",
+        "Ads Based On Data Received From Partners",
+        "Usage Data From Third-Party Apps And Websites"
+      ]
+    },
+    "App Settings": {
+      "type": "object",
+      "properties": {
+        "Block": {
+          "type": "object",
+          "properties": {
+            "BlockList": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "BlockList"
+          ]
+        },
+        "Settings": {
+          "type": "object",
+          "properties": {
+            "SettingsMap": {
+              "type": "object",
+              "properties": {
+                "Ads Based on Data Received from Partners": {
+                  "type": "string"
+                },
+                "Allow DownLoad": {
+                  "type": "string"
+                },
+                "Allow Others to Find Me": {
+                  "type": "string"
+                },
+                "App Language": {
+                  "type": "string"
+                },
+                "Content Preferences": {
+                  "type": "object",
+                  "properties": {
+                    "Keyword filters for videos in Following feed": {
+                      "type": "null"
+                    },
+                    "Keyword filters for videos in For You feed": {
+                      "type": "null"
+                    },
+                    "Video Languages Preferences": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Keyword filters for videos in Following feed",
+                    "Keyword filters for videos in For You feed",
+                    "Video Languages Preferences"
+                  ]
+                },
+                "Filter Comments": {
+                  "type": "string"
+                },
+                "Interests": {
+                  "type": "string"
+                },
+                "Personalized Ads": {
+                  "type": "string"
+                },
+                "Private Account": {
+                  "type": "string"
+                },
+                "Push Notification": {
+                  "type": "object",
+                  "properties": {
+                    "Desktop notification": {
+                      "type": "string"
+                    },
+                    "New Comments on My Video": {
+                      "type": "string"
+                    },
+                    "New Fans": {
+                      "type": "string"
+                    },
+                    "New Likes on My Video": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Desktop notification",
+                    "New Comments on My Video",
+                    "New Fans",
+                    "New Likes on My Video"
+                  ]
+                },
+                "Web Language": {
+                  "type": "string"
+                },
+                "Who Can Duet With Me": {
+                  "type": "string"
+                },
+                "Who Can Post Comments": {
+                  "type": "string"
+                },
+                "Who Can Send Me Message": {
+                  "type": "string"
+                },
+                "Who Can Stitch with your videos": {
+                  "type": "string"
+                },
+                "Who Can View Videos I Liked": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Ads Based on Data Received from Partners",
+                "Allow DownLoad",
+                "Allow Others to Find Me",
+                "App Language",
+                "Content Preferences",
+                "Filter Comments",
+                "Interests",
+                "Personalized Ads",
+                "Private Account",
+                "Push Notification",
+                "Web Language",
+                "Who Can Duet With Me",
+                "Who Can Post Comments",
+                "Who Can Send Me Message",
+                "Who Can Stitch with your videos",
+                "Who Can View Videos I Liked"
+              ]
+            }
+          },
+          "required": [
+            "SettingsMap"
+          ]
+        }
+      },
+      "required": [
+        "Block",
+        "Settings"
+      ]
+    },
+    "Comment": {
+      "type": "object",
+      "properties": {
+        "Comments": {
+          "type": "object",
+          "properties": {
+            "CommentsList": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "CommentsList"
+          ]
+        }
+      },
+      "required": [
+        "Comments"
+      ]
+    },
+    "Direct Messages": {
+      "type": "object",
+      "properties": {
+        "Chat History": {
+          "type": "object",
+          "properties": {
+            "ChatHistory": {
+              "type": "object",
+              "properties": {
+                "Chat History with XXXXXXXX:": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Date": {
+                        "type": "string"
+                      },
+                      "From": {
+                        "type": "string"
+                      },
+                      "Content": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Content",
+                      "Date",
+                      "From"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "Chat History with XXXXXXXXXX:"
+              ]
+            }
+          },
+          "required": [
+            "ChatHistory"
+          ]
+        }
+      },
+      "required": [
+        "Chat History"
+      ]
+    },
+    "Profile": {
+      "type": "object",
+      "properties": {
+        "Auto Fill": {
+          "type": "object",
+          "properties": {
+            "PhoneNumber": {
+              "type": "string"
+            },
+            "Email": {
+              "type": "string"
+            },
+            "FirstName": {
+              "type": "string"
+            },
+            "LastName": {
+              "type": "string"
+            },
+            "Address": {
+              "type": "string"
+            },
+            "ZipCode": {
+              "type": "string"
+            },
+            "Unit": {
+              "type": "string"
+            },
+            "City": {
+              "type": "string"
+            },
+            "State": {
+              "type": "string"
+            },
+            "Country": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Address",
+            "City",
+            "Country",
+            "Email",
+            "FirstName",
+            "LastName",
+            "PhoneNumber",
+            "State",
+            "Unit",
+            "ZipCode"
+          ]
+        },
+        "Profile Information": {
+          "type": "object",
+          "properties": {
+            "ProfileMap": {
+              "type": "object",
+              "properties": {
+                "PlatformInfo": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Description": {
+                        "type": "string"
+                      },
+                      "Name": {
+                        "type": "string"
+                      },
+                      "Platform": {
+                        "type": "string"
+                      },
+                      "Profile Photo": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Description",
+                      "Name",
+                      "Platform",
+                      "Profile Photo"
+                    ]
+                  }
+                },
+                "bioDescription": {
+                  "type": "string"
+                },
+                "birthDate": {
+                  "type": "string"
+                },
+                "emailAddress": {
+                  "type": "string"
+                },
+                "likesReceived": {
+                  "type": "string"
+                },
+                "profilePhoto": {
+                  "type": "string"
+                },
+                "profileVideo": {
+                  "type": "string"
+                },
+                "telephoneNumber": {
+                  "type": "string"
+                },
+                "userName": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "PlatformInfo",
+                "bioDescription",
+                "birthDate",
+                "emailAddress",
+                "likesReceived",
+                "profilePhoto",
+                "profileVideo",
+                "telephoneNumber",
+                "userName"
+              ]
+            }
+          },
+          "required": [
+            "ProfileMap"
+          ]
+        }
+      },
+      "required": [
+        "Auto Fill",
+        "Profile Information"
+      ]
+    },
+    "Tiktok Live": {
+      "type": "object",
+      "properties": {
+        "Go Live History": {
+          "type": "object"
+        },
+        "Go Live Settings": {
+          "type": "object"
+        },
+        "Watch Live History": {
+          "type": "object",
+          "properties": {
+            "WatchLiveMap": {
+              "type": "object",
+              "properties": {
+                "XXXXXXXXXXXXXXXXX": {
+                  "type": "object",
+                  "properties": {
+                    "Comments": {
+                      "type": "null"
+                    },
+                    "Questions": {
+                      "type": "null"
+                    },
+                    "WatchTime": {
+                      "type": "string"
+                    },
+                    "Link": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Comments",
+                    "Link",
+                    "Questions",
+                    "WatchTime"
+                  ]
+                }
+              },
+              "required": [
+                "XXXXXXXX"
+              ]
+            }
+          },
+          "required": [
+            "WatchLiveMap"
+          ]
+        },
+        "Watch Live Settings": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "Go Live History",
+        "Go Live Settings",
+        "Watch Live History",
+        "Watch Live Settings"
+      ]
+    },
+    "Tiktok Shopping": {
+      "type": "object",
+      "properties": {
+        "Communication History": {
+          "type": "object"
+        },
+        "Current Payment Information": {
+          "type": "object"
+        },
+        "Customer Support History": {
+          "type": "object"
+        },
+        "Order Dispute History": {
+          "type": "object"
+        },
+        "Order History": {
+          "type": "object"
+        },
+        "Product Browsing History": {
+          "type": "object"
+        },
+        "Product Review History": {
+          "type": "object"
+        },
+        "Return and Refund History": {
+          "type": "object"
+        },
+        "Saved Address Information": {
+          "type": "object"
+        },
+        "Shopping Cart List": {
+          "type": "object"
+        },
+        "Vouchers": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "Communication History",
+        "Current Payment Information",
+        "Customer Support History",
+        "Order Dispute History",
+        "Order History",
+        "Product Browsing History",
+        "Product Review History",
+        "Return and Refund History",
+        "Saved Address Information",
+        "Shopping Cart List",
+        "Vouchers"
+      ]
+    },
+    "Video": {
+      "type": "object",
+      "properties": {
+        "Videos": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "Videos"
+      ]
+    }
+  },
+  "required": [
+    "Activity",
+    "Ads and data",
+    "App Settings",
+    "Comment",
+    "Direct Messages",
+    "Profile",
+    "Tiktok Live",
+    "Tiktok Shopping",
+    "Video"
+  ]
+}
